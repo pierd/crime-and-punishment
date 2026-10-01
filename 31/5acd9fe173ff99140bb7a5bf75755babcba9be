@@ -1,0 +1,14 @@
+cover.tex
+  h_373d6cc5be4f86 1-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "315acd9fe173ff99140bb7a5bf75755babcba9be",
+  "prompts": {},
+  "humans": {
+    "h_373d6cc5be4f86": {
+      "author": "Kuba Jaroszewski <jakub.jaroszewski@gmail.com>"
+    }
+  }
+}
