@@ -1,0 +1,19 @@
+.github/workflows/build.yml
+  s_790ea3913e5a65::t_420460108de285 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "74860d58789c1c90053a2b5cf88125cae4959bdd",
+  "prompts": {},
+  "sessions": {
+    "s_790ea3913e5a65": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f071163aaffeiKpZ6EmwrZkmtl",
+        "model": "nemotron-3-ultra-free"
+      },
+      "human_author": "Kuba Jaroszewski <jakub.jaroszewski@gmail.com>"
+    }
+  }
+}
