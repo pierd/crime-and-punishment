@@ -1,0 +1,19 @@
+# Generated LaTeX and PDF files
+latex_output/
+*.aux
+*.log
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
