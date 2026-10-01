@@ -1,0 +1,23 @@
+.gitignore
+  s_790ea3913e5a65::t_7369ee01035770 1-19
+convert_to_latex.py
+  s_790ea3913e5a65::t_42a840aefa6e6c 160
+  s_790ea3913e5a65::t_1fd953dd977255 157-159
+  s_790ea3913e5a65::t_afc45b1cd153e4 161-163
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "4e3a9fd174f95bd94b54ead79cff8ebcd858a08f",
+  "prompts": {},
+  "sessions": {
+    "s_790ea3913e5a65": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f071163aaffeiKpZ6EmwrZkmtl",
+        "model": "nemotron-3-ultra-free"
+      },
+      "human_author": "Kuba Jaroszewski <jakub.jaroszewski@gmail.com>"
+    }
+  }
+}
