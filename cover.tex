@@ -1,0 +1,86 @@
+\documentclass[12pt,twoside,openany,a5paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=0.75in}
+\usepackage{setspace}
+\onehalfspacing
+
+% Simple chapter/section formatting without titlesec
+\makeatletter
+\renewcommand\part{%
+  \if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+  \thispagestyle{plain}%
+  \if@twocolumn
+    \onecolumn
+    \@tempswatrue
+  \else
+    \@tempswafalse
+  \fi
+  \null\vfil
+  \secdef\@part\@spart}
+\def\@part[#1]#2{%
+  \ifnum \c@secnumdepth >-2\relax
+    \refstepcounter{part}%
+    \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+  \else
+    \addcontentsline{toc}{part}{#1}%
+  \fi
+  {\centering
+   \interlinepenalty \@M
+   \normalfont
+   \huge \bfseries #2%
+   \markboth{}{}\par}
+  \nobreak
+  \vskip 3ex
+  \@afterheading}
+\def\@spart#1{%
+  {\centering
+   \interlinepenalty \@M
+   \normalfont
+   \huge \bfseries #1%
+   \markboth{}{}\par}
+  \nobreak
+  \vskip 3ex
+  \@afterheading}
+\renewcommand\chapter{%
+  \if@openright\cleardoublepage\else\clearpage\fi
+  \thispagestyle{plain}%
+  \global\@topnum\z@
+  \@afterindentfalse
+  \secdef\@chapter\@schapter}
+\def\@chapter[#1]#2{%
+  \ifnum \c@secnumdepth >\m@ne
+    \refstepcounter{chapter}%
+    \addcontentsline{toc}{chapter}{\protect
+      \numberline{\thechapter}#1}%
+  \else
+    \addcontentsline{toc}{chapter}{#1}%
+  \fi
+  {\centering\normalfont\Large\bfseries #2\par}
+  \nobreak
+  \vskip 1.5ex
+  \@afterheading}
+\def\@schapter#1{%
+  {\centering\normalfont\Large\bfseries #1\par}
+  \nobreak
+  \vskip 1.5ex
+  \@afterheading}
+\makeatother
+
+\begin{document}
+\thispagestyle{empty}
+\vspace*{3cm}
+\begin{center}
+{\Huge \bfseries Crime and Punishment}\\[1cm]
+{\Large by Fyodor Dostoevsky}\\[0.5cm]
+{\normalsize Translated by Constance Garnett}\\[3cm]
+\end{center}
+\vfill
+\clearpage
+\end{document}
